@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-title: 'Montserrat', sans-serif;
+    --font-text: 'Open Sans', sans-serif;
+    --primary-color: rgb(10, 17, 40);
+    --gap: 3rem;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-text);
+    font-size: 2.3rem;
+}
+
+.bg-dark {
+    min-height: 100vh;
+    background-image: url(../images/dark-bg.svg);
+    background-size: cover;
+    color: white;
+    padding: var(--gap);
+}
+
+.bg-white {
+    background-color: white;
+    min-height: 100vh;
+    color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+}
+
+#menu {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu a {
+    text-decoration: none;
+    padding: 1rem  1.5rem;
+    color: var(--primary-color);
+}
+
+#menu h1 {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+}
+
+#menu li {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+
+h3 {
+    font-size: 5.5rem;
+}
+
+h4 {
+    font-size: 5rem;
+}
+
+h5 {
+    font-size: 4.5rem;
+}
+
+h6 {
+    font-size: 4rem;
+}
