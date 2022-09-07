@@ -26,17 +26,28 @@ body {
     background-image: url(../images/dark-bg.svg);
     background-size: cover;
     color: white;
-    padding: var(--gap);
+    padding: 5rem var(--gap) 11rem;
 }
 
 .bg-white {
     background-color: white;
     min-height: 100vh;
     color: var(--primary-color);
+    padding: var(--gap);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-title);
+}
+
+h2 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+
+h3 {
+    font-size: 5.5rem;
 }
 
 #menu {
@@ -69,24 +80,15 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-h2 {
-    font-size: 6rem;
-    text-transform: uppercase;
-    margin-bottom: 5rem;
+.main-content {
+    margin: 0 auto;
+    text-align: center;
 }
 
-h3 {
-    font-size: 5.5rem;
+#home {
+    display: flex;
 }
 
-h4 {
-    font-size: 5rem;
-}
-
-h5 {
-    font-size: 4.5rem;
-}
-
-h6 {
-    font-size: 4rem;
+#home img {
+    width: 50%;
 }
