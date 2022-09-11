@@ -93,7 +93,7 @@ h3 {
     color: white;transition: all 300ms ease-in-out;
 }
 
-#intro {
+.intro {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
 }
@@ -105,7 +105,7 @@ h3 {
     text-align: left;
 }
 
-.intro-img img {
+.intro-img img{
     max-width: 100%;
     height: auto;
 }
@@ -171,25 +171,67 @@ h3 {
 
 #gallery {
     text-align: left;
+    display: flex;
+    flex-flow: column nowrap;
 }
 #gallery h2 {
     margin-bottom: 1rem;
 }
 
-.grid-two {
+.gallery-img {
     width: 100%;
+    max-height: 36rem;
+    max-width: 36rem;
     overflow: hidden;
 }
 
+.grid-two img {
+    background-size: cover;
+    background-position: center center;
+    transition: all 300ms ease-in-out;
+}
+
+.grid-two img:hover {
+    transform: translate(-3%, 3%)scale(1.2) rotate(4deg);
+}
+
+#pricing p {
+    margin-bottom: var(--gap);
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
 table {
-    min-width:60rem;
+    background-color: white;
+    color: var(--primary-color);
+    width: 100%;
+    min-width: 36rem;
+    white-space: nowrap;
     margin: auto;
-    border: 0.1rem solid gray;
+    border: 0.1rem solid black;
     border-collapse: collapse;
+}
+
+thead, tfoot {
+    background-color: lightgray;
+}
+
+caption {
+    text-align: left;
+    color: white;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
 }
 
 td, th {
     text-align: center;
-    border: 0.1rem solid gray;
+    border: 0.1rem solid black;
     padding: 0.5rem 0.2rem;
+}
+
+.contact-form {
+    grid-column: span 2;
 }
