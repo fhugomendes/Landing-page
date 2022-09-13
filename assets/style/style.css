@@ -55,6 +55,10 @@ h3 {
     font-size: 5.5rem;
 }
 
+#menu-icon {
+    display: none;
+}
+
 #menu {
     position: fixed;
     z-index: 2;
@@ -124,6 +128,7 @@ h3 {
 #top-3 p{
     margin-top: 1.3rem;
     font-size: 2.2rem;
+    text-align: justify;
 }
 
 #jobs {
@@ -234,4 +239,148 @@ td, th {
 
 .contact-form {
     grid-column: span 2;
+}
+
+fieldset {
+    text-align: initial;
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--gap);
+}
+
+.form-group {
+    flex: 1 1 32rem;
+}
+
+label {
+    display: block;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+input {
+    font-size: 2.5rem;
+}
+
+.form-group input, textarea{
+    padding: 1.5rem 2.5rem;
+    width: 100%;
+    font-size: 2rem;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+form button {
+    font-size: 3.5rem;
+    border: 1rem solid var(--primary-color);
+    padding: 1.5rem 2.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+form button:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/dark-bg.svg);
+    background-size: cover;
+    padding: 1rem 2rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: lightgray;
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .close-menu {
+        display: flex;
+        top: 0;
+        bottom: 0;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+
+    .close-menu  ul{
+        height: 100vh;flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: var(--gap);
+        
+    }
+
+    #menu.close-menu nav ul li {
+        font-size: 2rem;
+    }
+
+    #menu-icon {
+        display: block;
+        position: fixed;
+        z-index: 3;
+        right: 2rem;
+        top: 2rem;
+        background-color: rgba(0, 0, 0, 0.452);
+        text-decoration: none;
+        font-size: 4rem;
+        padding: 0.1rem 1.5rem;
+        color: white;
+        cursor: pointer;
+    }
+
+
+    h2 {
+        font-size: 4.5rem;
+    }
+    
+    .intro, .intro-content p, .main-content p, .grid {
+        grid-template-columns: 1fr;
+        text-align: justify;    
+    }
+
+    .grid-one h3 {
+        font-size: 3rem;
+    }
+    .grid-one p {
+        font-size: 2rem;
+    }
+    
+    .gallery-img {
+        margin: auto;
+    }
+
+    .gallery-img img {
+        width: 100vw;
+    }
+
+    label, input {
+        font-size: 1.8rem;
+    }
+
+    form button {
+        font-size: 2rem;
+        width: 100%;
+    }
 }
